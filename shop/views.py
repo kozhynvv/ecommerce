@@ -4,17 +4,17 @@ from .models import Category, Product
 
 # Create your views here.
 
-def home(request, caregory_slug=None):
-	caregory_page = None
+def home(request, category_slug=None):
+	category_page = None
 	products = None
-	if caregory_slug != None:
+	if category_slug != None:
 		caregory_page = get_object_or_404(Category, slug=
-			caregory_slug)
-		products = Product.objects.filter(category=caregory_page,
+			category_slug)
+		products = Product.objects.filter(category=category_page,
 			available=True)
 	else:
 		products = Product.objects.all().filter(available=True)
-	return render(request, 'home.html', {'category':caregory_page,
+	return render(request, 'home.html', {'category':category_page,
 		'products':products})
 
 
