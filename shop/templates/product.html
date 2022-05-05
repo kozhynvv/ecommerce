@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} 
+	Product
+{% endblock %}
+
+{% block content %}
+<link href="../../ecommerce/static/css/base.css" rel="stylesheet" type="text/css">
+	<div class="container py-5">
+		<div class="row mp-5">
+			<div class="col-10 mx-auto col-md-6 my-3">
+				<img src="{% static 'images/pic2.jpg' %}">
+			</div>
+		</div>
+	</div>
+	<div class="col-10 mx-auto col-md-6 my-3">
+		<div>
+			<h1 class="product_title">Teddy Bear</h1>
+			<h5 class="text-info font-italic mb-3">$9.99</h5>
+			<p class="product_desc">Product Description</p>
+			<p class="text-justify product_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum varius sit amet mattis vulputate enim nulla aliquet porttitor. Id diam maecenas ultricies mi. Massa id neque aliquam vestibulum morbi. Enim ut tellus elementum sagittis vitae. Quisque non tellus orci ac auctor augue. Tortor pretium viverra suspendisse potenti. Laoreet non curabitur gravida arcu ac tortor. Non consectetur a erat nam at lectus urna duis. Sem nulla pharetra diam sit. Et malesuada fames ac turpis egestas integer eget aliquet nibh.
+
+			Vel quam elementum pulvinar etiam non quam lacus suspendisse faucibus. Amet porttitor eget dolor morbi non arcu. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Turpis egestas maecenas pharetra convallis posuere morbi leo urna. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Eget mi proin sed libero enim sed faucibus turpis. Tincidunt eget nullam non nisi est. Porta non pulvinar neque laoreet suspendisse interdum consectetur. Et netus et malesuada fames ac turpis egestas sed. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Risus quis varius quam quisque id. Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus. Aliquam malesuada bibendum arcu vitae elementum curabitur. Eu lobortis elementum nibh tellus. Eros in cursus turpis massa tincidunt dui. Enim blandit volutpat maecenas volutpat blandit aliquam. Elit at imperdiet dui accumsan. Aliquam sem et tortor consequat id porta nibh venenatis.</p>
+			<p class="text-justify product_text">Out of stock</p>
+		</div>
+	</div>
+{% endblock %}
